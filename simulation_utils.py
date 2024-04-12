@@ -1,16 +1,18 @@
+import time
+
 import pybullet as p
 
 
 # Initialize and load simulation and robot
 def initialize_simulation():
     print("Initializing simulation...")
-    p.connect(p.DIRECT)
+    p.connect(p.GUI)
 
 
 def load_scene_and_robot():
     print("Loading scene and robot...")
-    scene_id = p.loadURDF("box_scene.urdf", basePosition=[0, 0, 0], useFixedBase=True)
-    robot_id = p.loadURDF("robot.urdf", basePosition=[0, 0, 1])
+    scene_id = p.loadURDF("urdf/moderate_scene.urdf", basePosition=[0, 0, 0], useFixedBase=True)
+    robot_id = p.loadURDF("urdf/robot.urdf", basePosition=[0, 0, 1])
     return scene_id, robot_id
 
 

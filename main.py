@@ -63,7 +63,7 @@ scheduler = ReduceLROnPlateau(optimizer, 'min', patience=5, factor=0.5, min_lr=1
 
 # Generate initial dataset and DataLoader
 print("Loading dataset...")
-inputs, targets = load_dataset("dataset_big_5000000_samples", feature_eng_func=feature_engineering)
+inputs, targets = load_dataset("dataset_big_5000000_samples_second_scene", feature_eng_func=feature_engineering)
 print("Converting to tensors...:")
 train_dataset = TensorDataset(inputs, targets)
 print("Making dataloaders...")
@@ -71,9 +71,9 @@ train_loader = DataLoader(train_dataset, batch_size=1024, shuffle=True)
 print("Dataset loaded!")
 
 # Train the model
-train_model(model, train_loader, criterion, optimizer, scheduler, epochs=200)
+train_model(model, train_loader, criterion, optimizer, scheduler, epochs=40)
 
 current_time = datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
-filename = f'models/model_{current_time}.pt'
+filename = f'models/model_2_{current_time}.pt'
 torch.save(model, filename)
 print(f'Model saved as {filename}')

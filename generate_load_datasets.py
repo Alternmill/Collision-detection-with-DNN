@@ -61,7 +61,7 @@ if __name__ == '__main__':
     scene_id, robot_id = load_scene_and_robot()
 
     dataset_size = 5000000
-    dataset_name = f"dataset_big_{dataset_size}_samples"
+    dataset_name = f"dataset_big_{dataset_size}_samples_second_scene"
 
     data = generate_dataset(dataset_size, scene_id, robot_id)
     save_dataset(data, dataset_name)

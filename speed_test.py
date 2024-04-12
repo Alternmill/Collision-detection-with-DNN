@@ -36,8 +36,8 @@ def load_model_and_data(path, dataset_name, feature_eng_func, device):
 
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-path = "models/model_2024-03-21_14-08-09.pt"
-dataset_name = "dataset_1000000_samples"
+path = "models/model_2_2024-04-08_20-18-06.pt"
+dataset_name = "dataset_big_5000000_samples_second_scene"
 
 # Load the model and data outside the timing
 model, loader = load_model_and_data(path, dataset_name, feature_engineering, device)

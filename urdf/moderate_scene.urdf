@@ -1,0 +1,409 @@
+<?xml version="1.0"?>
+<robot name="plane_scene">
+  <!-- Common invisible root link -->
+  <link name="root_link"/>
+
+  <!-- Front Wall -->
+  <link name="front_wall">
+    <visual>
+      <geometry>
+        <box size="8.1 0.1 2"/>
+      </geometry>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <material name="green"/>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="8.1 0.1 2"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <!-- Back Wall -->
+  <link name="back_wall">
+    <visual>
+      <geometry>
+        <box size="8.1 0.1 2"/>
+      </geometry>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <material name="green"/>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="8.1 0.1 2"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <!-- Left Wall -->
+  <link name="left_wall">
+    <visual>
+      <geometry>
+        <box size="0.1 6.1 2"/>
+      </geometry>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <material name="green"/>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.1 6.1 2"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <!-- Right Wall -->
+  <link name="right_wall">
+    <visual>
+      <geometry>
+        <box size="0.1 6.1 2"/>
+      </geometry>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <material name="green"/>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.1 6.1 2"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="st1_wall">
+    <visual>
+      <geometry>
+        <box size="0.02 2 2"/>
+      </geometry>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <material name="green"/>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.02 2 2"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="st2_wall">
+    <visual>
+      <geometry>
+        <box size="0.02 2 2"/>
+      </geometry>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <material name="green"/>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.02 2 2"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="st3_wall">
+    <visual>
+      <geometry>
+        <box size="0.02 2 2"/>
+      </geometry>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <material name="green"/>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.02 2 2"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="st4_wall">
+    <visual>
+      <geometry>
+        <box size="0.02 2 2"/>
+      </geometry>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <material name="green"/>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.02 2 2"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="st5_wall">
+    <visual>
+      <geometry>
+        <box size="0.02 2 2"/>
+      </geometry>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <material name="green"/>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.02 2 2"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="st6_wall">
+    <visual>
+      <geometry>
+        <box size="0.02 2 2"/>
+      </geometry>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <material name="green"/>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.02 2 2"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="st7_wall">
+    <visual>
+      <geometry>
+        <box size="0.02 2 2"/>
+      </geometry>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <material name="green"/>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.02 2 2"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="st8_wall">
+    <visual>
+      <geometry>
+        <box size="0.02 2 2"/>
+      </geometry>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <material name="green"/>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.02 2 2"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="toilet_link1">
+    <visual>
+      <geometry>
+        <mesh filename="Toilet.stl"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="Toilet.stl"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="toilet_link2">
+    <visual>
+      <geometry>
+        <mesh filename="Toilet.stl"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="Toilet.stl"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="toilet_link3">
+    <visual>
+      <geometry>
+        <mesh filename="Toilet.stl"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="Toilet.stl"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="toilet_link4">
+    <visual>
+      <geometry>
+        <mesh filename="Toilet.stl"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="Toilet.stl"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="toilet_link5">
+    <visual>
+      <geometry>
+        <mesh filename="Toilet.stl"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="Toilet.stl"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="toilet_link6">
+    <visual>
+      <geometry>
+        <mesh filename="Toilet.stl"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="Toilet.stl"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="toilet_link7">
+    <visual>
+      <geometry>
+        <mesh filename="Toilet.stl"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="Toilet.stl"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="toilet_link8">
+    <visual>
+      <geometry>
+        <mesh filename="Toilet.stl"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="Toilet.stl"/>
+      </geometry>
+    </collision>
+  </link>
+
+
+  <joint name="front_wall_joint" type="fixed">
+    <parent link="root_link"/>
+    <child link="front_wall"/>
+    <origin xyz="0 -3 1" rpy="0 0 0"/>
+  </joint>
+
+  <joint name="back_wall_joint" type="fixed">
+    <parent link="root_link"/>
+    <child link="back_wall"/>
+    <origin xyz="0 3 1" rpy="0 0 0"/>
+  </joint>
+
+  <joint name="left_wall_joint" type="fixed">
+    <parent link="root_link"/>
+    <child link="left_wall"/>
+    <origin xyz="-4 0 1" rpy="0 0 0"/>
+  </joint>
+
+  <joint name="right_wall_joint" type="fixed">
+    <parent link="root_link"/>
+    <child link="right_wall"/>
+    <origin xyz="4 0 1" rpy="0 0 0"/>
+  </joint>
+
+  <joint name="st1_wall_joint" type="fixed">
+    <parent link="root_link"/>
+    <child link="st1_wall"/>
+    <origin xyz="-2 -2 1" rpy="0 0 0"/>
+  </joint>
+
+  <joint name="st2_wall_joint" type="fixed">
+    <parent link="root_link"/>
+    <child link="st2_wall"/>
+    <origin xyz="-0.5 -2 1" rpy="0 0 0"/>
+  </joint>
+
+  <joint name="st3_wall_joint" type="fixed">
+    <parent link="root_link"/>
+    <child link="st3_wall"/>
+    <origin xyz="1 -2 1" rpy="0 0 0"/>
+  </joint>
+
+  <joint name="st4_wall_joint" type="fixed">
+    <parent link="root_link"/>
+    <child link="st4_wall"/>
+    <origin xyz="2.5 -2 1" rpy="0 0 0"/>
+  </joint>
+
+  <joint name="st5_wall_joint" type="fixed">
+    <parent link="root_link"/>
+    <child link="st5_wall"/>
+    <origin xyz="-2 2 1" rpy="0 0 0"/>
+  </joint>
+
+  <joint name="st6_wall_joint" type="fixed">
+    <parent link="root_link"/>
+    <child link="st6_wall"/>
+    <origin xyz="-0.5 2 1" rpy="0 0 0"/>
+  </joint>
+
+  <joint name="st7_wall_joint" type="fixed">
+    <parent link="root_link"/>
+    <child link="st7_wall"/>
+    <origin xyz="1 2 1" rpy="0 0 0"/>
+  </joint>
+
+  <joint name="st8_wall_joint" type="fixed">
+    <parent link="root_link"/>
+    <child link="st8_wall"/>
+    <origin xyz="2.5 2 1" rpy="0 0 0"/>
+  </joint>
+
+  <joint name="toilet_link1_joint" type="fixed">
+    <parent link="root_link"/>
+    <child link="toilet_link1"/>
+    <origin xyz="-1.25 -2 0" rpy="0 0 3.14159"/>
+  </joint>
+
+  <joint name="toilet_link2_joint" type="fixed">
+    <parent link="root_link"/>
+    <child link="toilet_link2"/>
+    <origin xyz="0.25 -2 0" rpy="0 0 3.14159"/>
+  </joint>
+
+  <joint name="toilet_link3_joint" type="fixed">
+    <parent link="root_link"/>
+    <child link="toilet_link3"/>
+    <origin xyz="1.75 -2 0" rpy="0 0 3.14159"/>
+  </joint>
+
+  <joint name="toilet_link4_joint" type="fixed">
+    <parent link="root_link"/>
+    <child link="toilet_link4"/>
+    <origin xyz="3.25 -2 0" rpy="0 0 3.14159"/>
+  </joint>
+
+  <joint name="toilet_link5_joint" type="fixed">
+    <parent link="root_link"/>
+    <child link="toilet_link5"/>
+    <origin xyz="-1.25 2 0" rpy="0 0 0"/>
+  </joint>
+
+  <joint name="toilet_link6_joint" type="fixed">
+    <parent link="root_link"/>
+    <child link="toilet_link6"/>
+    <origin xyz="0.25 2 0" rpy="0 0 0"/>
+  </joint>
+
+  <joint name="toilet_link7_joint" type="fixed">
+    <parent link="root_link"/>
+    <child link="toilet_link7"/>
+    <origin xyz="1.75 2 0" rpy="0 0 0"/>
+  </joint>
+
+  <joint name="toilet_link8_joint" type="fixed">
+    <parent link="root_link"/>
+    <child link="toilet_link8"/>
+    <origin xyz="3.25 2 0" rpy="0 0 0"/>
+  </joint>
+
+
+</robot>

@@ -10,7 +10,7 @@ from plotly.subplots import make_subplots
 initialize_simulation()
 scene_id, robot_id = load_scene_and_robot()
 
-path = ("models/model_2024-03-24_09-01-33.pt")
+path = ("models/model_2_2024-04-08_20-18-06.pt")
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 model = torch.load(path, map_location=device)
